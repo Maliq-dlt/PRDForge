@@ -10,9 +10,6 @@ jobs:
   backend-test:
     runs-on: ubuntu-latest
 
-    services:
-      # Optional: since we are using SQLite, we don't need a heavy DB service.
-
     steps:
     - uses: actions/checkout@v4
 
