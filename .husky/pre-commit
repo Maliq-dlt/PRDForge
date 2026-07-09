@@ -1,0 +1,15 @@
+#!/bin/sh
+echo "Running pre-commit hooks..."
+
+# Frontend checks
+cd frontend
+npm run lint || exit 1
+npm run test || exit 1
+cd ..
+
+# Backend checks
+cd backend
+php artisan test || exit 1
+cd ..
+
+echo "All checks passed!"

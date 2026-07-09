@@ -1,0 +1,22 @@
+# Dependency directories
+backend/vendor/
+frontend/node_modules/
+node_modules/
+
+# Environment files
+**/_env
+**/.env
+**/.env.*
+!**/.env.example
+
+# IDE / System files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build / Testing artifacts
+frontend/dist/
+backend/public/build/
+backend/.phpunit.result.cache
+backend/.phpunit.cache/
